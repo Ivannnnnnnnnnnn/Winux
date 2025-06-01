@@ -33,7 +33,7 @@ impl App for WinuxApp {
         {
             let mut open = self.launcher_open.lock().unwrap();
             if *open {
-                draw_launcher(ctx);  // <- changed: no &mut open arg anymore
+                draw_launcher(ctx);
             }
         }
 
@@ -44,7 +44,6 @@ impl App for WinuxApp {
 fn main() {
     let options = NativeOptions {
         vsync: true,
-        // initial_window_size is deprecated/removed; remove it or handle differently
         ..Default::default()
     };
 
