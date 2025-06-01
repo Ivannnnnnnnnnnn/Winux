@@ -1,6 +1,6 @@
 # Winux
 
-Winux is a Windows system utility tool currently under development.
+Winux is a Windows system utility tool that makes Windows linux-like, currently under development.
 
 ---
 
