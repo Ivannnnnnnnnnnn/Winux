@@ -4,16 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-eframe = "0.27"
-rdev = "0.5"
-tokio = { version = "1", features = ["full"] }
-serde = { version = "1", features = ["derive"] }
-serde_json = "1"
-windows = { version = "0.56", features = [
-  "Win32_Foundation",
-  "Win32_System_Threading",
-  "Win32_System_ProcessStatus",
-  "Win32_System_Diagnostics_ToolHelp",
-  "Win32_UI_HiDpi",
-  "Win32_UI_WindowsAndMessaging",
-] }
+eframe = { version = "0.23", features = ["glow"] }
+winapi = { version = "0.3", features = ["winuser", "windef"] }
+chrono = "0.4"
+dirs = "4.0"
+open = "3"
